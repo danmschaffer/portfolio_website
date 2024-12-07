@@ -1,6 +1,7 @@
 import React from 'react';
 import './landing.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { NavLink } from 'react-router-dom';
 
 const Landing = () => {
   return (
@@ -33,21 +34,21 @@ const Landing = () => {
             target="_blank" 
             rel="noopener noreferrer"
           >
-            <i className="fab fa-linkedin"></i>
+            <i className="fab fa-linkedin"/>
           </a>
           <a 
             href="https://github.com/danmschaffer" 
             target="_blank" 
             rel="noopener noreferrer"
           >
-            <i className="fab fa-github"></i>
+            <i className="fab fa-github"/>
           </a>
           <a href="mailto:danmschaffer@outlook.com">
-            <i className="fas fa-envelope"></i>
+            <i className="fas fa-envelope"/>
           </a>
         </div>
 
-        <a href="/projects" className="cta-button">Check My Work</a>
+        <NavLink to="/projects" className="cta-button">Check My World</NavLink>
       </div>
     </section>
   );
